@@ -23,9 +23,7 @@ module.exports = function (grunt) {
                 },
             },
         },
-
     });
-
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.registerTask('default', ['watch:scss']);
