@@ -7,14 +7,17 @@
 @import "../node_modules/@glidejs/glide/dist/css/glide.theme.min.css";
 
 //Base
+@import "base/typography";
 
 //Layout
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/footer";
 
 //Components
 @import "components/recipe-slide-card";
 @import "components/carousel-button";
+@import "components/button";
 
 // Pages
 

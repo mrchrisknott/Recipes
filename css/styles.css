@@ -7550,6 +7550,20 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+* {
+  font-family: 'Roboto'; }
+
+h1 {
+  font-weight: 100;
+  color: #FFF;
+  font-size: 2.2rem;
+  border-bottom: solid 2px #66d891; }
+
+p {
+  color: #FFF;
+  font-weight: 300;
+  line-height: 1.8rem; }
+
 header .page-header-top {
   padding: 40px 0 40px 0; }
   header .page-header-top img {
@@ -7563,6 +7577,9 @@ header nav {
     text-transform: uppercase;
     font-weight: 500;
     color: #393e4f; }
+
+footer p {
+  font-size: 0.9rem; }
 
 .recipe-slide-card {
   margin: 10px;
@@ -7589,7 +7606,14 @@ header nav {
   border: 8px;
   background-color: #fff; }
 
+.btn.btn-studenteat {
+  background-color: #66d891;
+  color: #393e4f; }
+
 body {
   background-color: #393e4f; }
+
+img {
+  max-width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
