@@ -6,6 +6,7 @@
  */
 @import url(../node_modules/@glidejs/glide/dist/css/glide.core.min.css);
 @import url(../node_modules/@glidejs/glide/dist/css/glide.theme.min.css);
+@import url(../node_modules/lightbox2/dist/css/lightbox.min.css);
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7637,6 +7638,41 @@ footer p {
       font-size: 1.1rem;
       padding-top: 10px;
       margin: 0; }
+
+body#page-login-reg form label {
+  color: #FFF; }
+body#page-login-reg form#registration-form {
+  background-color: #66d891;
+  padding: 10px;
+  border-radius: 3px; }
+  body#page-login-reg form#registration-form label {
+    color: #393e4f; }
+  body#page-login-reg form#registration-form .btn {
+    background-color: #FFF;
+    color: #393e4f;
+    border: 0; }
+
+body#page-recipe .recipe-image {
+  border: solid 3px #FFF;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  body#page-recipe .recipe-image a {
+    display: block;
+    height: 150px; }
+body#page-recipe .recipe-features {
+  list-style: none;
+  padding: 0;
+  color: #FFF; }
+  body#page-recipe .recipe-features li {
+    margin-bottom: 10px; }
+    body#page-recipe .recipe-features li i {
+      text-align: center;
+      width: 27px; }
 
 body {
   background-color: #393e4f; }
