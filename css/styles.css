@@ -7639,15 +7639,15 @@ footer p {
       padding-top: 10px;
       margin: 0; }
 
-body#page-login-reg form label {
+body#page-login form label {
   color: #FFF; }
-body#page-login-reg form#registration-form {
+body#page-login form#registration-form {
   background-color: #66d891;
   padding: 10px;
   border-radius: 3px; }
-  body#page-login-reg form#registration-form label {
+  body#page-login form#registration-form label {
     color: #393e4f; }
-  body#page-login-reg form#registration-form .btn {
+  body#page-login form#registration-form .btn {
     background-color: #FFF;
     color: #393e4f;
     border: 0; }
