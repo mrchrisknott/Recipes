@@ -31,7 +31,6 @@ if ($_POST) {
         }
     } else if ($_POST['login']) {
 
-
         if (!$_POST['email']) {
             $error = "Email not set";
         } else if (!$_POST['password']) {
@@ -41,14 +40,12 @@ if ($_POST) {
         } else if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
             $error = "Your email address is not valid";
         }
-
         if ($error) {
             $smarty->assign('error', $error);
         } else {
             // No errors
             $User = new User($Conn);
             $user_data = $User->loginUser($_POST['email'], $_POST['password']);
-
             if ($user_data) {
                 $_SESSION['is_loggedin'] = true;
                 $_SESSION['user_data'] = $user_data;
