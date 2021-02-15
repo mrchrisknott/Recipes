@@ -39,18 +39,18 @@ if ($_POST) {
                 //1    $message .= '</body></html>';
                 //1    mail($to, $subject, $message, $headers);
 
-                // uncomment the following code and ask Sean for help <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                // ask Sean for help <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-                //2    $email = new \SendGrid\Mail\Mail();
-                //2    $email->setFrom("c.knott3@uos.ac.uk", "Chris Knott");
-                //2    $email->setSubject("Welcome to StudentEat");
-                //2    $email->addTo($_POST['email'], "User");
-                //2    $email->addContent(
-                //2        "text/html",
-                //2        "<h1>Welcome to StudentEat!</h1>"
-                //2    );
-                //2    $sendgrid = new \SendGrid('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');
-                //2    $response = $sendgrid->send($email);
+                    $email = new \SendGrid\Mail\Mail();
+                    $email->setFrom("c.knott3@uos.ac.uk", "Chris Knott");
+                    $email->setSubject("Welcome to StudentEat");
+                    $email->addTo($_POST['email'], "User");
+                    $email->addContent(
+                        "text/html",
+                        "<h1>Welcome to StudentEat!</h1>"
+                    );
+                    $sendgrid = new \SendGrid('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');
+                    $response = $sendgrid->send($email);
 
                 $smarty->assign('success', "Your account has been created. Please now login.");
             } else {
