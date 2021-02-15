@@ -14,3 +14,10 @@ $smarty->setTemplateDir(__DIR__.'/../views')
 require_once(__DIR__.'/config.include.php');
 require_once(__DIR__.'/db.include.php');
 require_once(__DIR__.'/autoloader.include.php');
+
+if($_SESSION['is_loggedin']) {
+       $User = new User($Conn);
+       $active_user_data = $User->getUser($_SESSION['user_data']['user_id']);
+       $smarty->assign('user_data', $active_user_data);
+   }
+   

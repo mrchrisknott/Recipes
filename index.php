@@ -6,7 +6,14 @@ require_once(__DIR__.'/includes/boot.include.php');
 if($_GET['p']) {
     //
     // This array should be populated with those pages that should only be accessible to a signed in 'member'
-    $secure_pages = array('account');
+    $secure_pages = array(
+        'account',
+        'favourite',
+        'myrecipes',
+        'add',
+        'changepassword'
+      );
+    
     if (in_array($_GET['p'], $secure_pages)) {
         if(!$_SESSION['is_loggedin']) {
             header("Location: index.php?p=login");

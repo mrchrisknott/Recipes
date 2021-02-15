@@ -7639,6 +7639,9 @@ footer p {
       padding-top: 10px;
       margin: 0; }
 
+form.form-light label {
+  color: #FFF; }
+
 body#page-login form label {
   color: #FFF; }
 body#page-login form#registration-form {
