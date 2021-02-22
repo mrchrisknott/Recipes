@@ -15,9 +15,11 @@ if ($_POST) {
         $error = "Recipe time not set";
     } else if (!$_POST['recipe_servings']) {
         $error = "Recipe servings not set";
-    } else if (!isset($_FILES['recipe_image'])) {
+        
+    } else if(!$_FILES['recipe_image'][ 'name']) {
         $error = "Please upload a recipe image";
     }
+
     if ($error) {
         $smarty->assign('error', $error);
     } else {
