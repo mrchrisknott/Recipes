@@ -15,4 +15,14 @@ class Recipe
 
         return $stmt->execute($data);
     }
+
+    public function getAllRecipesForCategory($category_id)
+    {
+        $query = "SELECT * FROM recipes WHERE cat_id = :cat_id";
+        $stmt = $this->Conn->prepare($query);
+        $stmt->execute([
+            "cat_id" => $category_id
+        ]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
