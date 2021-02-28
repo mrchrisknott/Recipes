@@ -7565,6 +7565,11 @@ p {
   font-weight: 300;
   line-height: 1.8rem; }
 
+h2 {
+  color: #FFF;
+  font-weight: 100;
+  font-size: 2rem; }
+
 header .page-header-top {
   padding: 40px 0 40px 0; }
   header .page-header-top img {
