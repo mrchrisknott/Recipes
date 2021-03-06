@@ -22,9 +22,6 @@ module.exports = function (grunt) {
                     spawn: false,
                 },
             },
-        },
-        // Start - Did I position the following correctly for Activity 15 / Step 7?
-        watch: {
             js: {
                 files: ['./scripts/**/*.js'],
                 tasks: ['uglify:main'],
@@ -33,8 +30,6 @@ module.exports = function (grunt) {
                 },
             },
         },
-        //   End - Did I position the above correctly for Activity 15 / Step 7?
-
         uglify: {
             main: {
                 options: {
