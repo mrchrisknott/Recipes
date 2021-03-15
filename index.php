@@ -11,7 +11,8 @@ if($_GET['p']) {
         'favourite',
         'myrecipes',
         'add',
-        'changepassword'
+        'changepassword',
+        'favourite'
       );
     
     if (in_array($_GET['p'], $secure_pages)) {

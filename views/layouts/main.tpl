@@ -7,7 +7,7 @@
     <title>Quick and affordable student recipies - StudentEat</title>
     <link href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css" rel="stylesheet">
     <link href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="/recipes/css/styles.css">
     <script src="https://kit.fontawesome.com/0e3065f827.js" crossorigin="anonymous"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400&display=swap"

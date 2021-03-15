@@ -41,5 +41,15 @@ class Favourite {
         }
     }
 
+    public function getAllFavouritesForUser(){
+        $query = "SELECT * FROM user_favs LEFT JOIN recipes ON user_favs.recipe_id = recipes.recipe_id WHERE user_favs.user_id = :user_id";
+        $stmt = $this->Conn->prepare($query);
+        $stmt->execute([
+            "user_id" => $_SESSION['user_data']['user_id']
+        ]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+    
+
 
 }
